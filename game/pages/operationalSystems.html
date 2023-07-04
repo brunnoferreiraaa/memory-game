@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/game.css">
+
+  <script defer src="../js/so.js"></script>
+
+  <title>Memory Game</title>
+  <style>
+    main{
+        background-image: url(../new_imgs/fundo_amarelo.jpg);
+        background-size: cover;
+    }
+
+    .back{
+        background-image: url(../new_imgs/carta\ amarela.png);
+    }
+
+    .face{
+        border: 4px solid whitesmoke;
+    }
+
+    .dropdown-content a{
+      color: white;
+      text-shadow: 2px 2px 3px black;
+    }
+    .dropdown-content a:hover{
+        color: rgb(226, 152, 14);
+        text-shadow: 1px 1px 3px whitesmoke;
+      }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <span class="player"></span>
+      <nav>
+          <ul>
+            <li class="dropdown">
+              <a class="drop_btn" href="#">Gamemode</a>
+              <div class="dropdown-content">
+                <a href="game.html" target="_self">Programação</a>
+                <a href="hardware.html" target="_self">Hardware</a>
+                <a href="operationalSystems.html" target="_self">Sist.Operac</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      <span>Tempo: <span class="timer">00</span></span>
+    </header>
+
+    <div class="grid"></div>
+  </main>
+
+</body>
+   
+</html>
